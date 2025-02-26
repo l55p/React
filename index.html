@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      background-color: #14141E;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; /* Align content to the top */
+      min-height: 100vh;
+    }
+    .header {
+      width: 100%; /* Full width of the page */
+      margin: 0; /* Ensure no space above the banner */
+    }
+    .banner {
+      width: 100%; /* Stretches across the entire width */
+      height: 300px; /* Set a fixed height, adjust as needed */
+      object-fit: cover; /* Ensures the image covers the area without distortion */
+      display: block; /* Avoids any extra space from inline elements */
+    }
+    .greeting {
+      width: 80%;
+      font-size: 30px;
+      font-weight: bold;
+      margin: 20px 0;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      gap: 20px;
+      width: 80%;
+    }
+    .card {
+      background-color: #1c1f3b;
+      padding: 20px;
+      border-radius: 12px;
+      flex: 1;
+    }
+    .card h2 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card p {
+      margin: 10px 0 20px;
+    }
+    .download-button {
+      background-color: #8000FF;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="img.png" alt="Banner" class="banner">
+  </div>
+  <div class="greeting">Welcome to the React Booter</div>
+  <div class="cards">
+    <div class="card">
+      <h2>🛠 React</h2>
+      <p>Tired of loosing?</p>
+    </div>
+    <div class="card">
+      <h2>React Stresser</h2>
+      <p>React Stresser is one of the most efficient network booter tools in 2025, maintaining its position as leader of the 'Booting Industry'.</p>
+    </div>
+  </div>
+  <a href="#" download><button class="download-button">Download React</button></a>
+</body>
+</html>
